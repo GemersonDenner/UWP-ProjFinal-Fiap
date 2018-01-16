@@ -122,7 +122,9 @@
     <Compile Include="Repositories\Base\IRepository.cs" />
     <Compile Include="Repositories\Base\Repository.cs" />
     <Compile Include="Repositories\EFAgendaItemRepository.cs" />
+    <Compile Include="Repositories\StorageAgendaItemRepository.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\StorageService.cs" />
     <Compile Include="ViewModels\AddAgendaItemVM.cs" />
     <Compile Include="ViewModels\InitialPageVM.cs" />
   </ItemGroup>

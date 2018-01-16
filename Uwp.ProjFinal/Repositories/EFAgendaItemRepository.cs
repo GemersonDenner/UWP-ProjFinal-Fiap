@@ -53,6 +53,7 @@ namespace Uwp.ProjFinal.Repositories
                 }
             }
 
+            await StorageAgendaItemRepository.Instance.Create(entity);
         }
 
         public override async Task Update(AgendaItem entity)
@@ -69,6 +70,8 @@ namespace Uwp.ProjFinal.Repositories
 
                 Items[collectionIndex] = entity;
             }
+
+            await StorageAgendaItemRepository.Instance.Update(entity);
         }
 
         public override async Task Delete(AgendaItem entity)
@@ -85,6 +88,8 @@ namespace Uwp.ProjFinal.Repositories
                     await context.SaveChangesAsync();
                 }
             }
+
+            await StorageAgendaItemRepository.Instance.Delete(entity);
         }
     }
 }
